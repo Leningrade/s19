@@ -1,0 +1,6 @@
+{
+  "disallowAttributeTemplateString": true,
+  "disallowClassLiteralsBeforeAttributes": true,
+  "disallowSpaceAfterCodeOperator": true,
+  "requireSpaceAfterCodeOperator": true
+}
