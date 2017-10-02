@@ -3,9 +3,9 @@
       "conversational-form": "^0.9.51",
       "gulp": "^3.9.1"
    },
-   "name": "Labcdmx-Web-Base",
+   "name": "s19",
    "version": "0.10",
-   "description": "Primera Version de la base de contenidos para Labcdmx",
+   "description": "Primera version de la plataforma Ciudad Resiliente s19",
    "main": "index.js",
    "author": "Edgar Robles",
    "license": "MIT",
@@ -22,5 +22,6 @@
       "gulp-webserver": "^0.9.1",
       "jstransformer-markdown-it": "^2.0.0",
       "pug": "^2.0.0-rc.3"
-   }
+   },
+   "repository": "https://github.com/Leningrade/s19.git"
 }
