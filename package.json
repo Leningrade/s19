@@ -1,7 +1,8 @@
 {
    "dependencies": {
       "conversational-form": "^0.9.51",
-      "gulp": "^3.9.1"
+      "gulp": "^3.9.1",
+      "vue": "^2.4.4"
    },
    "name": "s19",
    "version": "0.10",
