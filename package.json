@@ -2,7 +2,8 @@
    "dependencies": {
       "conversational-form": "^0.9.51",
       "gulp": "^3.9.1",
-      "vue": "^2.4.4"
+      "vue": "^2.4.4",
+      "yarn": "^1.1.0"
    },
    "name": "s19",
    "version": "0.10",
@@ -26,6 +27,7 @@
       "gulp-webserver": "^0.9.1",
       "jquery": "^3.2.1",
       "jstransformer-markdown-it": "^2.0.0",
+      "merge-stream": "^1.0.1",
       "pug": "^2.0.0-rc.3"
    },
    "repository": "https://github.com/Leningrade/s19.git"

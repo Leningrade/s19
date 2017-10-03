@@ -9,6 +9,7 @@ const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
+const merge = require('merge-stream');
 /***************************************************/
 /*Paths*/
 /**************************************************/
@@ -44,19 +45,22 @@ gulp.task('sass', function(){
 });
 
 gulp.task('scripts',function(){
-  return gulp.src([jsFiles])
+  // estos van al final del documento
+  const mainScripts = gulp.src(jsFiles)
   .pipe(concat('scripts.js'))
   .pipe(gulp.dest(jsDest))
   .pipe(rename('scripts.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest(jsDest));
-
-  return gulp.src([jQery, serializer])
+// estos van al principio del documento
+  const moduleScripts = gulp.src([jQuery, serializer])
   .pipe(concat('modules.js'))
   .pipe(gulp.dest(jsDest))
   .pipe(rename('modules.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest(jsDest));
+
+  return merge(mainScripts, moduleScripts);
 });
 
 
