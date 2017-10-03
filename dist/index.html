@@ -52,15 +52,7 @@ C I U D A D +————————+
   </nav>
 
   <div class="container">
-    <div class="containerRight" cf-context>
-      <section class="form">
-        <form style="height:800px;" id="iniciativas19" cf-form>
-          <input type="text"  cf-questions="¡Hola!|¡Hola! ¿Cómo te va?|¡Hey! ¿Cómo estás?" value="¡Hola! Quiero Proponer una iniciativa :)"/>
-          <input type="text"  name="nombre_contribuyente" cf-questions="Perfecto,¿Cómo te llamas?|¡Increible!¿Cuál es tu nombre?" value="Anónimo"/>
-          <button type="submit" id="submit-form" value="to me">
-        </form>
-      </section>
-    </div>
+
     <div class="containerLeft">
       <section class="cero box">
         <h1>Iniciativa 19</h1>
@@ -90,6 +82,27 @@ C I U D A D +————————+
         </ol>
         <p>Los resultados se publicarán en nuestras redes sociales el 20 de octubre de 2017. La entrega de premios se realizará a finales de noviembre de este mismo año.</p>
       </section>
+    </div>
+    <div class="containerRight" >
+        <form  id="iniciativas19" >
+          <input type="text"  cf-questions="¡Hola!|¡Hola! ¿Cómo te va?|¡Hey! ¿Cómo estás?" value="¡Hola! Quiero Proponer una iniciativa :)"/>
+          <input type="text"  name="nombre_contribuyente" cf-questions="Perfecto,¿Cómo te llamas?|¡Increible!¿Cuál es tu nombre?" value="Anónimo"/>
+          <input type="text"  name="nombre_proyecto" cf-questions="¿A quién quieres proponer?|¿Qué proyecto quieres proponer? " id="id-nombre" placeholder="Un solo nombre"/>
+          <select type="option" name="tipo_proyecto" cf-questions="¿Cómo esta ayudando {id-nombre} a la comunidad?" >
+            <option value="reconstruccion">Reconstrucción</option>
+            <option value="rescate">Rescate</option>
+            <option value="vivienda">Vivienda</option>
+            <option value="mapeo">Mapeo</option>
+            <option value="vivieres">Vivieres </option>
+            <option value="acopio">Acopio </option>
+          </select>
+          <input type="text"  name="descipcion_proyecto" cf-questions="Cuentanos más sobre el proyecto"/>
+          <input type="text"  name="sitio_proyecto" cf-questions="¿Tiene página web? ¿Cuál es?"/>
+
+          <input type="text"  name="sitio_facebook"cf-questions="¿Tiene facebook? ¿Cuál es la página? Si no tiene, puedes dejar la respuesta en blanco."/>
+          <input type="text"  name="sitio_twitter"cf-questions="¿Tiene Twitter? ¿Cuál es su @?"/>
+          <input type="submit" id="submit-form" value="to me"/>
+        </form>
     </div>
     </div>
 
