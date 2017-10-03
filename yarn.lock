@@ -961,6 +961,10 @@ form-data@~2.3.1:
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
 
+form-serializer@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/form-serializer/-/form-serializer-2.5.0.tgz#caea2facbc1bcee7f655d9136707133f3facb5a3"
+
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"

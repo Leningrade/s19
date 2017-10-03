@@ -9,13 +9,12 @@ const htmlmin = require('gulp-htmlmin');
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
-
 /***************************************************/
 /*Paths*/
 /**************************************************/
 const   jsFiles = 'src/js/*.js';
-const   jsDest =  'dist/js'
-
+const   jsDest =  'dist/js';
+const serializer = 'node_modules/form-serializer/dist/jquery.serialize-object.min.js';
 
 
 /***************************************************/
@@ -44,7 +43,7 @@ gulp.task('sass', function(){
 });
 
 gulp.task('scripts',function(){
-  return gulp.src(jsFiles)
+  return gulp.src([jsFiles, serializer])
   .pipe(concat('scripts.js'))
   .pipe(gulp.dest(jsDest))
   .pipe(rename('scripts.min.js'))
