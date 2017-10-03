@@ -52,25 +52,12 @@ C I U D A D +————————+
   </nav>
 
   <div class="container">
-    <div class="containerRight">
+    <div class="containerRight" cf-context>
       <section class="form">
-        <form style="height:800px;" id="my-form-element" cf-form  cf-context cf-prevent-autofocus>
+        <form style="height:800px;" id="iniciativas19" cf-form>
           <input type="text"  cf-questions="¡Hola!|¡Hola! ¿Cómo te va?|¡Hey! ¿Cómo estás?" value="¡Hola! Quiero Proponer una iniciativa :)"/>
-          <input type="text"  cf-questions="¿a quién quieres proponer? " id="id-nombre"/>
-          <select tipe="option" cf-questions="¿Cómo esta ayudando {id-nombre} a la comunidad?">
-            <option value="reconstruccion">Reconstrucción</option>
-            <option value="rescate">Rescate</option>
-            <option value="vivienda">Vivienda</option>
-            <option value="mapeo">Mapeo</option>
-            <option value="vivieres">Vivieres </option>
-            <option value="acopio">Acopio </option>
-          </select>
-          <input type="text"  cf-questions="¿ Y cómo se llama la iniciativa de {id-nombre}?"/>
-          <input type="text"  cf-questions="Cuentanos más sobre el proyecto"/>
-          <input type="text"  cf-questions="¿Tiene página web? ¿Cuál es?"/>
-
-          <input type="text"  cf-questions="¿Tiene redes sociales?"/>
-
+          <input type="text"  name="nombre_contribuyente" cf-questions="Perfecto,¿Cómo te llamas?|¡Increible!¿Cuál es tu nombre?" value="Anónimo"/>
+          <button type="submit" id="submit-form" value="to me">
         </form>
       </section>
     </div>
