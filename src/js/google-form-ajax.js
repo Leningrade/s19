@@ -4,6 +4,7 @@
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
+    Access-Control-Allow-Origin: *,
     url: url,
     method: "GET",
     dataType: "json",
