@@ -28,7 +28,7 @@
       "jquery": "^3.2.1",
       "jstransformer-markdown-it": "^2.0.0",
       "merge-stream": "^1.0.1",
-      "pug": "^2.0.0-rc.3"
+      "pug": "^3.0.1"
    },
    "repository": "https://github.com/Leningrade/s19.git"
 }
